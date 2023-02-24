@@ -81,7 +81,7 @@ jobs:
         run:  pip install -r requirements-dev.txt
 
       - name: Run Tests
-        shell: bash
+        shell: sh
         run: ./tools/test --cov
 
       - name: Upload Artifacts
